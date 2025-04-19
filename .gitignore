@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+terraform/.terraform
+terraform/terraform.tfstate
+
 ### STS ###
 .apt_generated
 .classpath

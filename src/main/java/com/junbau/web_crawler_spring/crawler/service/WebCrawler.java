@@ -28,9 +28,7 @@ public class WebCrawler implements Crawler {
 
         logger.info("Attempting to crawl " + url);
 
-        String htmlDoc = scraper.getDocument(url);
-
-        logger.info(htmlDoc);
+        scraper.getDocument(url);
     }
 
     @Override

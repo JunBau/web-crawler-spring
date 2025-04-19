@@ -1,15 +1,17 @@
 package com.junbau.web_crawler_spring.crawler.model;
 
 
+import java.util.List;
+
 public class CrawlRequest {
 
-    private String url;
+    private List<String> urls;
 
-    public String getUrl() {
-        return url;
+    public List<String> getUrls() {
+        return urls;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setUrls(List<String> urls) {
+        this.urls = urls;
     }
 }

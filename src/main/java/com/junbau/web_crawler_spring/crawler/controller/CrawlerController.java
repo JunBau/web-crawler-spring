@@ -15,7 +15,7 @@ public class CrawlerController {
 
     @PostMapping("/crawl")
     public ResponseEntity greeting(@RequestBody CrawlRequest crawlRequest) {
-        webCrawler.crawl(crawlRequest.getUrl());
+        crawlRequest.getUrls().forEach(webCrawler::crawl);
         return ResponseEntity.ok().build();
     }
 
