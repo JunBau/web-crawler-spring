@@ -28,6 +28,8 @@
 	</scm>
 	<properties>
 		<java.version>24</java.version>
+		<awssdk.version>2.29.0</awssdk.version>
+		<jsoup.version>1.19.1</jsoup.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -45,13 +47,20 @@
 		<dependency>
 			<groupId>org.jsoup</groupId>
 			<artifactId>jsoup</artifactId>
-			<version>1.19.1</version>
+			<version>${jsoup.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/software.amazon.awssdk/kafka -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>kafka</artifactId>
+			<version>${awssdk.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>s3</artifactId>
-			<version>2.29.0</version>
+			<version>${awssdk.version}</version>
 		</dependency>
 	</dependencies>
 
